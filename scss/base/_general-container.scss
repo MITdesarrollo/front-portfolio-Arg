@@ -1,3 +1,5 @@
+@import 'vars';
+
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +7,19 @@
 }
 
 body {
+    background-color: $azul;
     font-family: 'Courier New', Courier, monospace;
     min-height: 100vh;
 }
 
 html {
-    font-size: 20px;
+    font-size: 16px;
 }
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+

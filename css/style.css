@@ -5,71 +5,269 @@
 }
 
 body {
+  background-color: #7386c6;
   font-family: "Courier New", Courier, monospace;
   min-height: 100vh;
 }
 
 html {
-  font-size: 20px;
+  font-size: 16px;
 }
 
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 8px;
+  }
+}
 .grid-container-header {
-  background-color: aquamarine;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 .grid-container-header .left-header {
-  background-color: antiquewhite;
-  grid-column: 1/4;
+  padding: 0.5em;
+  font-size: 1rem;
   display: flex;
+  justify-content: flex-start;
+}
+.grid-container-header .left-header div {
+  display: flex;
+  align-items: center;
 }
 .grid-container-header .left-header__img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
+  padding: 0 1em 0 1em;
+  width: fit-content;
 }
 .grid-container-header .left-header__img img {
-  width: 60%;
+  width: 5rem;
+  height: 5rem;
 }
 .grid-container-header .left-header__title {
-  width: 80%;
-  align-self: center;
-  font-size: 0.7rem;
   text-align: center;
+}
+.grid-container-header .left-header__title span {
+  display: block;
 }
 .grid-container-header .right-header {
   display: flex;
-  background-color: antiquewhite;
-  grid-column: 11/13;
+  justify-content: flex-end;
 }
 .grid-container-header .right-header__social-media {
-  height: 100%;
-  width: 70%;
+  width: fit-content;
 }
 .grid-container-header .right-header__social-media ul {
   height: 100%;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 .grid-container-header .right-header__social-media ul li {
   list-style: none;
 }
 .grid-container-header .right-header__social-media ul li a {
+  padding: 0 1rem 0 1rem;
   display: flex;
-  justify-content: center;
 }
 .grid-container-header .right-header__social-media ul li a img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.container-main-a {
+  font-family: "Courier Prime", monospace;
+  margin-top: 1rem;
+  width: 100%;
+}
+.container-main-a .window {
+  padding: 0.5em;
+  background-color: rgb(228, 225, 225);
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 760px;
+}
+.container-main-a .window__title {
+  background: -webkit-linear-gradient(to right, #7386c6, #F99aa9);
+  background: linear-gradient(to right, #7386c6, #F99aa9);
+  padding: 0.5em;
+  border: 3px solid black;
+  width: 100%;
+  display: flex;
+}
+.container-main-a .window__title div {
+  display: flex;
+  align-items: center;
+}
+.container-main-a .window__title .title-left {
+  color: white;
   width: 30%;
 }
-.grid-container-header .right-header__user-panel {
+.container-main-a .window__title .title-mid {
+  justify-content: center;
+  width: 40%;
+}
+.container-main-a .window__title .title-right {
+  justify-content: flex-end;
+  width: 30%;
+}
+.container-main-a .window__title .title-right img {
+  margin-left: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.container-main-a .window__menu {
+  padding: 1em;
+  font-size: 1.5rem;
+}
+.container-main-a .window__menu .line-letter {
+  border-bottom: 2px solid black;
+}
+.container-main-a .window__screen {
+  position: relative;
+  color: white;
+  border: 3px solid black;
+  background-color: #7386c6;
+  height: 80%;
+  width: 100%;
+}
+.container-main-a .window__screen #scrollbar-style-x {
+  position: absolute;
+  content: "";
+  padding: 12px;
+  width: 100%;
+  bottom: 0;
+  background-color: white;
+}
+.container-main-a .window__screen #scrollbar-style-x::before {
+  border-top: 0.125em solid black;
+  border-right: 0.125em solid black;
+  position: absolute;
+  content: "";
+  padding: 0.7em;
+  background-color: #f99aaf;
+  bottom: 0;
+  width: 10%;
+  left: 0;
+}
+.container-main-a .window__screen #scrollbar-style-y {
+  position: absolute;
+  content: "";
+  padding: 0.7em;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+}
+.container-main-a .window__screen #scrollbar-style-y::before {
+  position: absolute;
+  content: "";
+  padding: 0.7em;
+  height: 20%;
+  background-color: #f99aaf;
+  top: 0;
+  right: 0;
+  border-left: 0.125em solid black;
+  border-bottom: 2px solid black;
+}
+.container-main-a .window__screen #scrollbar-arrow-x img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 23px;
+  height: 24px;
+  transform: rotate(270deg);
+}
+.container-main-a .window__screen #scrollbar-arrow-y img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 23px;
+  height: 24px;
+}
+.container-main-a .window__screen #scrollbar-corner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgb(228, 225, 225);
+}
+.container-main-a .window__screen #scrollbar-corner img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1.43rem;
+  height: 1.43rem;
+}
+.container-main-a .window__screen .screen-title {
+  font-size: 5rem;
+  padding: 1em 1em 1em 1em;
+  display: flex;
+  justify-content: flex-start;
+}
+.container-main-a .window__screen .screen-name {
+  font-size: 3rem;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  width: 30%;
+  padding-bottom: 2em;
 }
-.grid-container-header .right-header__user-panel img {
-  width: 30%;
+.container-main-a .window__screen .screen-name span {
+  color: #ffe68a;
+}
+
+@media screen and (max-width: 992px) {
+  .container-main-a .window {
+    width: 100%;
+    height: auto;
+  }
+  .container-main-a .window__screen .screen-title {
+    font-size: 3rem;
+  }
+  .container-main-a .window__screen .screen-name {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container-main-a .window__title {
+    font-size: 1rem;
+  }
+  .container-main-a .window__title .title-right img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .container-main-a .window__screen {
+    border: 2px solid black;
+  }
+  .container-main-a .window__screen #scrollbar-style-x {
+    padding: 1em;
+  }
+  .container-main-a .window__screen #scrollbar-style-x::before {
+    padding: 1em;
+    width: 6em;
+  }
+  .container-main-a .window__screen #scrollbar-style-y {
+    padding: 1em;
+  }
+  .container-main-a .window__screen #scrollbar-style-y::before {
+    padding: 1em;
+    height: 6em;
+  }
+  .container-main-a .window__screen #scrollbar-arrow-x img {
+    width: 16px;
+    height: 16px;
+  }
+  .container-main-a .window__screen #scrollbar-arrow-y img {
+    width: 16px;
+    height: 16px;
+  }
+  .container-main-a .window__screen .screen-title {
+    padding-bottom: 3em;
+    font-size: 2.5rem;
+  }
+  .container-main-a .window__screen .screen-name {
+    font-size: 1.7rem;
+    padding-bottom: 10em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
