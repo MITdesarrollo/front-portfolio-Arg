@@ -159,20 +159,33 @@
             .screen-title {
                 font-size: 4rem;
                 padding: 1em 1em 1em 1em;
-                display: flex;
-                justify-content: flex-start;
+                
+                display: table;
+                padding-left: 2em;
 
                 h2{
-                    animation: titulo 4s ease;
-                }
-                @keyframes titulo {
-                    0%{
-                        opacity: 0;
-                    }
-                    100%{
-                        opacity: 1;
+                    position: relative;
+                    
 
+                    span{
+                        position: absolute;
+                        right: 0;
+                        width: 0;
+                        background-color: $rosa;
+                        border-left: 1px solid black;
+                        animation: maquina 5s infinite alternate steps(13);
+                    
                     }
+                }
+                
+                @keyframes maquina {
+                    from{
+                        width: 100%;
+                    }
+                    to{
+                        width: 0;
+                    }
+                   
                 }
             }
 
