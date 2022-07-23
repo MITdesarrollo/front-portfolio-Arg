@@ -3,7 +3,9 @@
     display: grid;
     grid-template-columns: auto auto;
     margin-top: 5em;
+    padding-bottom: 7em;
     background-size: cover;
+    
     
 
     .grid-left {
@@ -102,7 +104,7 @@
                 }
             }
 
-            img:hover {
+            div:hover {
                 transform: scale(1.1);
                 transition: all 0.2s ease;
             }
@@ -207,9 +209,12 @@
                 }
 
             }
-            img:hover {
+            div:hover {
                 transform: scale(1.1);
                 transition: all 0.2s ease;
+                p{
+                    color: white;
+                }
             }
         }
 

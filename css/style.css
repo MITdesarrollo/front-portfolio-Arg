@@ -352,6 +352,7 @@ html {
   display: grid;
   grid-template-columns: auto auto;
   margin-top: 5em;
+  padding-bottom: 7em;
   background-size: cover;
 }
 .container-grid .grid-left {
@@ -436,7 +437,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.container-grid .grid-left .folder img:hover {
+.container-grid .grid-left .folder div:hover {
   transform: scale(1.1);
   transition: all 0.2s ease;
 }
@@ -519,9 +520,12 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.container-grid .grid-right .folder-2 img:hover {
+.container-grid .grid-right .folder-2 div:hover {
   transform: scale(1.1);
   transition: all 0.2s ease;
+}
+.container-grid .grid-right .folder-2 div:hover p {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
