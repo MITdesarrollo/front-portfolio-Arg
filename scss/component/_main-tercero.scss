@@ -1,185 +1,217 @@
-.container-grid{
+.container-grid {
     background-image: url(../../images/window-3/background.png);
     display: grid;
     grid-template-columns: auto auto;
     margin-top: 5em;
     background-size: cover;
     
-    
-    
-   
-    .grid-left{
-        
+
+    .grid-left {
         /* display: grid;
         grid-template-rows: auto auto auto; */
         padding: 1em;
-        .hard-skills{
-            
+
+        .hard-skills {
             width: 70%;
             margin-left: auto;
             margin-right: auto;
-            padding: .2em;
+            padding: 0.2em;
             width: 70%;
             border: 1px solid black;
             background-color: white;
-            .arriba{
+
+            .arriba {
                 display: flex;
                 justify-content: flex-end;
                 background-color: $rosa;
                 height: 1em;
                 border: 1px solid black;
                 align-items: center;
-                img{
+
+                img {
                     margin-left: 2px;
-                    height: .7em;
-                    margin-right: .7em;
+                    height: 0.7em;
+                    margin-right: 0.7em;
                 }
             }
-
         }
-        p{
+
+        p {
             text-align: center;
-            margin-top: .5em;
+            margin-top: 0.5em;
             font-weight: bold;
-
-
         }
-        .folder{
+
+        .folder {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             margin-left: 3em;
-            div{ height: fit-content;
-            width: fit-content;}
 
-            .html{
+            div {
+                height: fit-content;
+                width: fit-content;
+            }
+
+            &__html {
                 position: relative;
-                img{
-                   
+
+                img {
                     width: 10rem;
                     height: 10rem;
-                    
-                    
-                    
                 }
-                p{
+
+                p {
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    
-
                 }
-
             }
-            .css{
+
+            &__css {
                 position: relative;
-                img{
+
+                img {
                     
                     width: 10rem;
                     height: 10rem;
-                    
-                    
                 }
-                p{
+
+                p {
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-
                 }
-
             }
-            .js{
+
+            &__js {
                 position: relative;
-                
-                img{
-                    
+
+                img {
                     width: 10rem;
                     height: 10rem;
-                    
-                    
                 }
-                p{
+
+                p {
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    
-
                 }
-
             }
 
-            img:hover{
+            img:hover {
                 transform: scale(1.1);
-                transition: all .2s ease;
+                transition: all 0.2s ease;
             }
+        }
 
-
-        }  
         /* Animacion */
-
-
-
-
-
-
-
     }
 
-    
-    .grid-right{
+    .grid-right {
         /* display: grid;
         grid-template-rows: auto auto auto; */
         padding: 1em;
-        .soft-skills{
+
+        .soft-skills {
             width: 70%;
             margin-left: auto;
             margin-right: auto;
-             padding: .2em;
+            padding: 0.2em;
             background-color: white;
             border: 1px solid black;
-            .arriba-2{
+
+            .arriba-2 {
                 background-color: $rosa;
                 height: 1em;
                 border: 1px solid black;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
-                img{
-                    height: .7em;
-                    margin-left: 2px;
-                    margin-right: .7em;
 
+                img {
+                    height: 0.7em;
+                    margin-left: 2px;
+                    margin-right: 0.7em;
                 }
             }
+        }
 
-        }
-        p{
+        p {
             text-align: center;
-            margin-top: .5em;
+            margin-top: 0.5em;
             font-weight: bold;
-            
-            
-            
-            
         }
-        .folder-2{
+
+        .folder-2 {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            img{
 
-                width: 10rem;
-                height: 10rem;
-                
+            div {
+                height: fit-content;
+                width: fit-content;
             }
-            .a{
-                margin-left: 50%;
+
+
+            &__sass {
+                position: relative;
+
+                img {
+                    width: 10rem;
+                    height: 10rem;
+                }
+
+                p {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+            }
+
+            &__git {
+                position: relative;
+
+                img {
+                    width: 10rem;
+                    height: 10rem;
+                }
+
+                p {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+            }
+
+            &__bs {
+                position: relative;
+
+                img {
+                    width: 10rem;
+                    height: 10rem;
+                }
+
+                p {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+            }
+            img:hover {
+                transform: scale(1.1);
+                transition: all 0.2s ease;
             }
         }
-
 
     }
 }

@@ -397,40 +397,40 @@ html {
   height: fit-content;
   width: fit-content;
 }
-.container-grid .grid-left .folder .html {
+.container-grid .grid-left .folder__html {
   position: relative;
 }
-.container-grid .grid-left .folder .html img {
+.container-grid .grid-left .folder__html img {
   width: 10rem;
   height: 10rem;
 }
-.container-grid .grid-left .folder .html p {
+.container-grid .grid-left .folder__html p {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.container-grid .grid-left .folder .css {
+.container-grid .grid-left .folder__css {
   position: relative;
 }
-.container-grid .grid-left .folder .css img {
+.container-grid .grid-left .folder__css img {
   width: 10rem;
   height: 10rem;
 }
-.container-grid .grid-left .folder .css p {
+.container-grid .grid-left .folder__css p {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.container-grid .grid-left .folder .js {
+.container-grid .grid-left .folder__js {
   position: relative;
 }
-.container-grid .grid-left .folder .js img {
+.container-grid .grid-left .folder__js img {
   width: 10rem;
   height: 10rem;
 }
-.container-grid .grid-left .folder .js p {
+.container-grid .grid-left .folder__js p {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -476,12 +476,52 @@ html {
   flex-direction: column;
   justify-content: space-between;
 }
-.container-grid .grid-right .folder-2 img {
+.container-grid .grid-right .folder-2 div {
+  height: fit-content;
+  width: fit-content;
+}
+.container-grid .grid-right .folder-2__sass {
+  position: relative;
+}
+.container-grid .grid-right .folder-2__sass img {
   width: 10rem;
   height: 10rem;
 }
-.container-grid .grid-right .folder-2 .a {
-  margin-left: 50%;
+.container-grid .grid-right .folder-2__sass p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container-grid .grid-right .folder-2__git {
+  position: relative;
+}
+.container-grid .grid-right .folder-2__git img {
+  width: 10rem;
+  height: 10rem;
+}
+.container-grid .grid-right .folder-2__git p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container-grid .grid-right .folder-2__bs {
+  position: relative;
+}
+.container-grid .grid-right .folder-2__bs img {
+  width: 10rem;
+  height: 10rem;
+}
+.container-grid .grid-right .folder-2__bs p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container-grid .grid-right .folder-2 img:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
 }
 
 /*# sourceMappingURL=style.css.map */
