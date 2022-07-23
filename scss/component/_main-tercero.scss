@@ -1,0 +1,116 @@
+.container-grid{
+    background-image: url(../../images/window-3/background.png);
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 5em;
+    background-size: cover;
+    
+    
+    
+   
+    .grid-left{
+        
+        /* display: grid;
+        grid-template-rows: auto auto auto; */
+        padding: 1em;
+        .hard-skills{
+            
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: .2em;
+            width: 70%;
+            border: 1px solid black;
+            background-color: white;
+            .arriba{
+                display: flex;
+                justify-content: flex-end;
+                background-color: $rosa;
+                height: 1em;
+                border: 1px solid black;
+                align-items: center;
+                img{
+                    margin-left: 2px;
+                    height: .7em;
+                    margin-right: .7em;
+                }
+            }
+
+        }
+        p{
+            text-align: center;
+            margin-top: .5em;
+            font-weight: bold;
+
+
+        }
+        .folder{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            img{
+
+                width: 10rem;
+                height: 10rem;
+                
+            }
+            .b{
+                margin-left: 50%;
+            }
+        }
+
+    }
+    .grid-right{
+        /* display: grid;
+        grid-template-rows: auto auto auto; */
+        padding: 1em;
+        .soft-skills{
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+             padding: .2em;
+            background-color: white;
+            border: 1px solid black;
+            .arriba-2{
+                background-color: $rosa;
+                height: 1em;
+                border: 1px solid black;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                img{
+                    height: .7em;
+                    margin-left: 2px;
+                    margin-right: .7em;
+
+                }
+            }
+
+        }
+        p{
+            text-align: center;
+            margin-top: .5em;
+            font-weight: bold;
+            
+            
+            
+            
+        }
+        .folder-2{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            img{
+
+                width: 10rem;
+                height: 10rem;
+                
+            }
+            .a{
+                margin-left: 50%;
+            }
+        }
+
+
+    }
+}

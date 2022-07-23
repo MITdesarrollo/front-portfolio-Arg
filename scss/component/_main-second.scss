@@ -1,0 +1,79 @@
+#second {
+  font-family: "Courier Prime", monospace;
+  margin-top: 1rem;
+  width: 100%;
+  padding-top: 8em;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 1em;
+
+  .window {
+    padding: 1em;
+    background-color: rgb(228, 225, 225);
+    margin: 0;
+    width: 20%;
+    height: fit-content;
+
+
+    &__title {
+      background: -webkit-linear-gradient(to right, #7386c6, #f99aa9);
+      background: linear-gradient(to right, #7386c6, #f99aa9);
+      padding: 0.5em;
+      border: 3px solid black;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        height: 1em;
+      }
+    }
+
+    &__screen {
+      div {
+        height: 100%;
+        img {
+          max-width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    &__margin {
+      padding: 0.5em;
+    }
+  }
+  .texto{
+    width: 70%;
+    background-color: $azul;
+    font-size: 1rem;
+    padding: 2em;
+    margin-left: 3em;
+    box-shadow: 24px 24px 0px -3px rgba(249,154,175,1);
+    -webkit-box-shadow: 24px 24px 0px -3px rgba(249,154,175,1);
+    -moz-box-shadow: 24px 24px 0px -3px rgba(249,154,175,1);
+    h2{
+        
+    }
+    h3{
+        margin-top:1em;
+    }
+}
+.subtitulo{
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    font-size: 1rem;
+    
+    h3{
+        
+
+     }
+    }
+    
+}
+
+
+ 

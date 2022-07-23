@@ -3,6 +3,7 @@
 .grid-container-header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background-color: #7386c6;
 
     .left-header {
         padding: .5em;
