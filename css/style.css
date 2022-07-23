@@ -206,6 +206,17 @@ html {
   display: flex;
   justify-content: flex-start;
 }
+.container-main-a .window__screen .screen-title h2 {
+  animation: titulo 4s ease;
+}
+@keyframes titulo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .container-main-a .window__screen .screen-name {
   font-size: 3rem;
   display: flex;
@@ -347,6 +358,7 @@ html {
   /* display: grid;
   grid-template-rows: auto auto auto; */
   padding: 1em;
+  /* Animacion */
 }
 .container-grid .grid-left .hard-skills {
   width: 70%;
@@ -379,13 +391,54 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-left: 3em;
 }
-.container-grid .grid-left .folder img {
+.container-grid .grid-left .folder div {
+  height: fit-content;
+  width: fit-content;
+}
+.container-grid .grid-left .folder .html {
+  position: relative;
+}
+.container-grid .grid-left .folder .html img {
   width: 10rem;
   height: 10rem;
 }
-.container-grid .grid-left .folder .b {
-  margin-left: 50%;
+.container-grid .grid-left .folder .html p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container-grid .grid-left .folder .css {
+  position: relative;
+}
+.container-grid .grid-left .folder .css img {
+  width: 10rem;
+  height: 10rem;
+}
+.container-grid .grid-left .folder .css p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container-grid .grid-left .folder .js {
+  position: relative;
+}
+.container-grid .grid-left .folder .js img {
+  width: 10rem;
+  height: 10rem;
+}
+.container-grid .grid-left .folder .js p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container-grid .grid-left .folder img:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
 }
 .container-grid .grid-right {
   /* display: grid;
