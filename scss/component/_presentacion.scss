@@ -1,20 +1,147 @@
 .presentacion-container {
+  padding: 0 10rem 0 10rem;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  background-color: #7386c6;
+  background-image: url("/images/presentacion/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 
   .presentacion-container-top {
+    width: 100%;
     display: flex;
+
+    #espada {
+      animation: espada 1s linear 0s infinite;
+    }
+
+    @keyframes espada {
+      0% {
+        transform: rotate(0deg)
+      }
+
+      50% {
+        transform: rotate(20deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
+      
+    }
+
     img {
-      width: 20rem;
+      width: 10rem;
     }
 
     .espada {
       width: 40%;
-      justify-content: center;
+      justify-content: flex-start;
+
+    }
+
+    .bomba-corazones {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+
+      div {
+        width: 100%;
+      }
+
+      #corazones {
+        padding-left: 5rem;
+
+        img {
+          width: 15rem;
+          transform: rotate(10deg);
+        }
+      }
+
+      #bomba {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+
+
+      }
+
+      #bomba-animation {
+        animation: bomba 1s linear 0s infinite;
+      }
+
+      @keyframes bomba {
+        0% {
+          transform: translateX(0);
+        }
+
+        50% {
+          transform: translateX(15px);
+        }
+
+        100% {
+          transform: translateX(0);
+        }
+        
+      }
+    }
+  }
+
+  .presentacion-container-middle {
+    height: fit-content;
+
+    img {
+      width: 20rem;
+    }
+
+  }
+
+  .presentacion-container-middle-b {
+
+  }
+
+  .presentacion-container-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 10rem;
+
+    }
+
+    #gamepad {
+      animation: gamepad 2s linear 0s infinite;
+    }
+    @keyframes gamepad {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    #diamante {
+      animation: diamante 2s linear 0s infinite;
+    }
+    @keyframes diamante {
+      0% {
+        transform: translateY(0)
+      }
+
+      50% {
+        transform: translateY(10px)
+      }
+
+      100% {
+        transform: translateY(0)
+      }
     }
   }
 }
