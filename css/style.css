@@ -540,22 +540,114 @@ html {
 }
 
 .presentacion-container {
+  padding: 0 10rem 0 10rem;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  background-color: #7386c6;
+  background-image: url("/images/presentacion/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .presentacion-container .presentacion-container-top {
+  width: 100%;
   display: flex;
 }
+.presentacion-container .presentacion-container-top #espada {
+  animation: espada 1s linear 0s infinite;
+}
+@keyframes espada {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .presentacion-container .presentacion-container-top img {
-  width: 20rem;
+  width: 10rem;
 }
 .presentacion-container .presentacion-container-top .espada {
   width: 40%;
-  justify-content: center;
+  justify-content: flex-start;
+}
+.presentacion-container .presentacion-container-top .bomba-corazones {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.presentacion-container .presentacion-container-top .bomba-corazones div {
+  width: 100%;
+}
+.presentacion-container .presentacion-container-top .bomba-corazones #corazones {
+  padding-left: 5rem;
+}
+.presentacion-container .presentacion-container-top .bomba-corazones #corazones img {
+  width: 15rem;
+  transform: rotate(10deg);
+}
+.presentacion-container .presentacion-container-top .bomba-corazones #bomba {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.presentacion-container .presentacion-container-top .bomba-corazones #bomba-animation {
+  animation: bomba 1s linear 0s infinite;
+}
+@keyframes bomba {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.presentacion-container .presentacion-container-middle {
+  height: fit-content;
+}
+.presentacion-container .presentacion-container-middle img {
+  width: 20rem;
+}
+.presentacion-container .presentacion-container-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.presentacion-container .presentacion-container-bottom img {
+  width: 10rem;
+}
+.presentacion-container .presentacion-container-bottom #gamepad {
+  animation: gamepad 2s linear 0s infinite;
+}
+@keyframes gamepad {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.presentacion-container .presentacion-container-bottom #diamante {
+  animation: diamante 2s linear 0s infinite;
+}
+@keyframes diamante {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
