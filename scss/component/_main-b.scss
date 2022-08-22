@@ -24,6 +24,7 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
+      margin-bottom: 0.2em;
 
       img {
         height: 1em;
@@ -53,17 +54,26 @@
     box-shadow: 24px 24px 0px -3px rgba(249,154,175,1);
     -webkit-box-shadow: 24px 24px 0px -3px rgba(249,154,175,1);
     -moz-box-shadow: 24px 24px 0px -3px rgba(249,154,175,1);
-    
+    h2{
+      margin-bottom: 1em;
+    }
     h3{
-        margin-top:1em;
+      margin-left: 3em;
+      textarea{
+        .desc{
+          
+        }
+
+      }
+        
     }
 }
 .subtitulo{
-    padding-top: 1em;
+    padding-top: 0.2em;
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    font-size: 1rem;
+    font-size: 1.3rem;
     
     h3{
         

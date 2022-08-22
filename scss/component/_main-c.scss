@@ -2,7 +2,7 @@
     background-image: url(../../images/window-3/background.png);
     display: grid;
     grid-template-columns: auto auto;
-    margin-top: 5em;
+    margin-top: 2em;
     padding-bottom: 7em;
     background-size: cover;
     
@@ -73,6 +73,7 @@
 
             &__css {
                 position: relative;
+                margin-left: 50%;
 
                 img {
                     
@@ -107,6 +108,9 @@
             div:hover {
                 transform: scale(1.1);
                 transition: all 0.2s ease;
+                p{
+                    color: white;
+                }
             }
         }
 
@@ -178,6 +182,7 @@
 
             &__git {
                 position: relative;
+                margin-left: 50%;
 
                 img {
                     width: 10rem;

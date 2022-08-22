@@ -8,6 +8,7 @@ body {
   /* background-color: $azul; */
   font-family: "Courier New", Courier, monospace;
   min-height: 100vh;
+  margin: 0 1em;
 }
 
 html {
@@ -22,7 +23,7 @@ html {
 .grid-container-header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: #7386c6;
+  background-color: white;
 }
 .grid-container-header .left-header {
   padding: 0.5em;
@@ -80,8 +81,10 @@ html {
 .container-main-a {
   font-family: "Courier Prime", monospace;
   padding-bottom: 2em;
+  padding-top: 2em;
   width: 100%;
   background-color: #7386c6;
+  margin-top: 1em;
 }
 .container-main-a .window {
   padding: 0.5em;
@@ -325,6 +328,7 @@ html {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0.2em;
 }
 #second .window__title img {
   height: 1em;
@@ -349,21 +353,24 @@ html {
   -webkit-box-shadow: 24px 24px 0px -3px rgb(249, 154, 175);
   -moz-box-shadow: 24px 24px 0px -3px rgb(249, 154, 175);
 }
+#second .texto h2 {
+  margin-bottom: 1em;
+}
 #second .texto h3 {
-  margin-top: 1em;
+  margin-left: 3em;
 }
 #second .subtitulo {
-  padding-top: 1em;
+  padding-top: 0.2em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 .container-grid {
   background-image: url(../../images/window-3/background.png);
   display: grid;
   grid-template-columns: auto auto;
-  margin-top: 5em;
+  margin-top: 2em;
   padding-bottom: 7em;
   background-size: cover;
 }
@@ -424,6 +431,7 @@ html {
 }
 .container-grid .grid-left .folder__css {
   position: relative;
+  margin-left: 50%;
 }
 .container-grid .grid-left .folder__css img {
   width: 10rem;
@@ -451,6 +459,9 @@ html {
 .container-grid .grid-left .folder div:hover {
   transform: scale(1.1);
   transition: all 0.2s ease;
+}
+.container-grid .grid-left .folder div:hover p {
+  color: white;
 }
 .container-grid .grid-right {
   /* display: grid;
@@ -507,6 +518,7 @@ html {
 }
 .container-grid .grid-right .folder-2__git {
   position: relative;
+  margin-left: 50%;
 }
 .container-grid .grid-right .folder-2__git img {
   width: 10rem;
@@ -648,6 +660,90 @@ html {
   100% {
     transform: translateY(0);
   }
+}
+
+.grid-container-main-b {
+  font-family: "Courier Prime", monospace;
+  width: 100%;
+  background-color: white;
+}
+.grid-container-main-b .container-a-b {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5rem;
+}
+.grid-container-main-b .container-a-b p {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.grid-container-main-b .container-a-b .left {
+  margin-top: 5rem;
+  width: 50%;
+  padding: 1rem;
+}
+.grid-container-main-b .container-a-b .left .edu {
+  display: flex;
+  justify-content: center;
+}
+.grid-container-main-b .container-a-b .left .edu img {
+  width: 20rem;
+}
+.grid-container-main-b .container-a-b .left .edu:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+.grid-container-main-b .container-a-b .left .descripcion {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+  background-color: #ffe68a;
+}
+.grid-container-main-b .container-a-b .left .descripcion img {
+  margin-left: 3rem;
+  width: 5rem;
+}
+.grid-container-main-b .container-a-b .left .descripcion .textos {
+  margin-bottom: 2rem;
+}
+.grid-container-main-b .container-a-b .left .descripcion .textos h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.grid-container-main-b .container-a-b .rigth {
+  margin-top: 5rem;
+  width: 50%;
+  padding: 1rem;
+}
+.grid-container-main-b .container-a-b .rigth .exp {
+  display: flex;
+  justify-content: center;
+}
+.grid-container-main-b .container-a-b .rigth .exp img {
+  width: 20rem;
+}
+.grid-container-main-b .container-a-b .rigth .exp:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+.grid-container-main-b .container-a-b .rigth .descrpcion-b {
+  display: flex;
+  margin-top: 3rem;
+  background-color: #ffe68a;
+}
+.grid-container-main-b .container-a-b .rigth .descrpcion-b .img-2 {
+  margin-left: 2rem;
+}
+.grid-container-main-b .container-a-b .rigth .descrpcion-b .img-2 img {
+  width: 5rem;
+}
+.grid-container-main-b .container-a-b .rigth .descrpcion-b .textos-2 {
+  margin-bottom: 2rem;
+  margin-left: 8em;
+}
+.grid-container-main-b .container-a-b .rigth .descrpcion-b .textos-2 h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
