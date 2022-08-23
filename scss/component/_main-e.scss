@@ -1,0 +1,146 @@
+@import '../base/vars';
+
+
+.proyectos{
+    display: flex;
+    margin-bottom: 2rem;
+
+
+
+    .cont-texto{
+        border: 2px solid $azul;
+        width: 20%;
+        padding: 0.5em;
+        height: 13em;
+        background-color: #11FFBD;
+        .barra{
+            border: 2px solid $azul;
+            display: flex;
+            justify-content: end;
+            background: #488bce;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #E5E5BE, #488bce);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #E5E5BE, #488bce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+            margin-bottom: 0.5em;
+            
+            img{
+                width: 1em;
+                margin-left: 2px;
+            }
+        }
+
+        .texto{
+            border: 1px solid $azul;
+            background: $rosa;
+            height: 10em;
+            display: flex;
+            flex-direction: column;
+            p{
+                font-size: 1em;
+            }
+            #itemButton{ 
+                display: flex;
+                margin-top: 5rem;
+                justify-content: center;
+                text-decoration: none;
+                
+
+              #button{
+                width: 6rem;
+                font-family: 'Courier New', Courier, monospace;
+                background-color: #11FFBD;
+                border: 1px solid $azul;
+                box-shadow: -7px -7px 0px 0px rgba(115,134,198,0.75);
+                -webkit-box-shadow: -7px -7px 0px 0px rgba(115,134,198,0.75);
+                -moz-box-shadow: -7px -7px 0px 0px rgba(115,134,198,0.75);
+              }
+            }
+
+        }
+    }
+
+
+
+    .cont-carrusel{
+        margin-left: 2em;
+        width: 75%;
+        
+        .barra-carrusel{
+            border: 2px solid $azul;
+            display: flex;
+            justify-content: end;
+            background: #f4c4f3;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #fc67fa, #f4c4f3);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #fc67fa, #f4c4f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            img{
+                width: 2em;
+                padding: 3px;
+            }
+        }
+
+        #conteItemsCarrusel{
+            
+            height: 25rem;
+            overflow: hidden;
+
+            
+
+            .item-carrusel{
+                border: 1px solid $azul;
+                height: 25rem;
+                position: relative;
+    
+                .tarjetaCarrusel{
+                    background-color: aqua;
+                    height: 100%;
+                }
+    
+                .flechasCarrusel{
+                    
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+    
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 1em;
+                    img{
+                        width: 1.5em;
+                    }
+    
+                }
+
+                #tarjetaCarrusel-1{
+                  background-color: #E5E5BE;  
+                }
+                #tarjetaCarrusel-2{
+                    background-color: #8a2457;  
+                }
+                #tarjetaCarrusel-3{
+                    background-color: #0b8877;  
+                }
+
+                a{
+                    text-decoration: none;
+                }
+      
+      
+    
+          }
+            
+    
+    
+    
+        }
+
+        }
+        
+
+
+
+
+}

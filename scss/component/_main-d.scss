@@ -1,85 +1,89 @@
 @import '../base/vars';
 
-.grid-container-main-b{
+.grid-container-main-b {
     font-family: 'Courier Prime', monospace;
     width: 100%;
     background-color: white;
 
-    .container-a-b{
-        
+    .container-a-b {
+
         display: flex;
         justify-content: space-around;
         padding-bottom: 5rem;
 
 
-        p{
+        p {
             font-size: 2rem;
             text-align: center;
             margin-bottom: 2rem;
-            
+
         }
 
-        .left{
+        .left {
             margin-top: 5rem;
             width: 50%;
             padding: 1rem;
 
-            .edu{
+            .edu {
                 display: flex;
-                justify-content:center;
-                img{
+                justify-content: center;
+
+                img {
                     width: 20rem;
                 }
             }
-            .edu:hover{
+
+            .edu:hover {
                 transform: scale(1.1);
                 transition: all 0.2s ease;
             }
 
-            .descripcion{
+            .descripcion {
                 display: flex;
                 justify-content: space-around;
                 margin-top: 3rem;
                 background-color: $amarillo;
 
-                img{
+                img {
                     margin-left: 3rem;
                     width: 5rem;
-        
-                  }
-                .textos{
-                    
-                    margin-bottom: 2rem;
-                    
-                    h3{
-                        margin-top: 1rem;
-                        margin-bottom: 1rem;
-                        }
 
                 }
-                  
+
+                .textos {
+
+                    margin-bottom: 2rem;
+
+                    h3 {
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                    }
+
+                }
+
 
             }
-            
+
         }
 
-        .rigth{
+        .rigth {
             margin-top: 5rem;
             width: 50%;
             padding: 1rem;
 
 
-            .exp{
+            .exp {
                 display: flex;
-                justify-content:center;
-                img{
+                justify-content: center;
+
+                img {
                     width: 20rem;
 
                 }
-            
+
             }
 
-            .exp:hover{
+            .exp:hover {
                 transform: scale(1.1);
                 transition: all 0.2s ease;
             }
@@ -87,31 +91,31 @@
 
 
 
-
-
-            .descrpcion-b{
+            .descrpcion-b {
                 display: flex;
                 margin-top: 3rem;
                 background-color: $amarillo;
-                
-                .img-2{
+
+                .img-2 {
                     margin-left: 2rem;
-                    img{
+
+                    img {
                         width: 5rem;
-                    } 
+                    }
 
                 }
-                 
-                
-                .textos-2{
-                    
+
+
+                .textos-2 {
+
                     margin-bottom: 2rem;
                     margin-left: 8em;
-                    h3{
-                    
+
+                    h3 {
+
                         margin-top: 1rem;
                         margin-bottom: 1rem;
-                        
+
                     }
                 }
 
