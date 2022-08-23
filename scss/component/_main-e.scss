@@ -3,7 +3,10 @@
 
 .proyectos{
     display: flex;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    
+    background-image: url(/images/carrusel/background.png);
+    background-size: cover;
 
 
 
@@ -13,6 +16,8 @@
         padding: 0.5em;
         height: 13em;
         background-color: #11FFBD;
+        margin-top: 2rem;
+        margin-left: 0.5rem;
         .barra{
             border: 2px solid $azul;
             display: flex;
@@ -36,6 +41,7 @@
             height: 10em;
             display: flex;
             flex-direction: column;
+            
             p{
                 font-size: 1em;
             }
@@ -65,6 +71,7 @@
     .cont-carrusel{
         margin-left: 2em;
         width: 75%;
+        margin-top: 2rem;
         
         .barra-carrusel{
             border: 2px solid $azul;
@@ -81,7 +88,7 @@
         }
 
         #conteItemsCarrusel{
-            
+            margin-top: 0.5rem;
             height: 25rem;
             overflow: hidden;
 
